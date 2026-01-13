@@ -38,8 +38,34 @@ def hollow_right_triangle(n):
             result += "*"
 
     return result.rstrip()
-print(hollow_right_triangle(4))
+# print(inverted_pyramid(5))
+
+# #### Example (n = 4):
+# *******
+#  *****
+#   ***
+#    *
 
 # Q3: Inverted Pyramid
 def inverted_pyramid(n):
-    return ""
+
+    result = ""
+
+    if n < 3:
+        result += "The pyramid height should be at least 3."
+
+    else:
+        for i in range(n):
+            for j in range(i):
+                result += " "
+
+            for j in range(n - i):
+                result += "*"
+
+            for j in range(n - i - 1):
+                result += "*"
+
+            result += "\n"
+
+    return result.rstrip()
+# print(inverted_pyramid(5))
