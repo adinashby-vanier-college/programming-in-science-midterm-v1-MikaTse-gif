@@ -2,11 +2,11 @@ import math
 
 # Q1: Calculate the area of a circle
 def area_of_circle(radius):
-    # area = radius * 2 * math.pi r nizilyou
+    
+    area = radius ** 2 * math.pi 
 
-    return ""
-    # return round(area, 2)
-# print(area_of_circle(5))
+    return round(area, 2)
+print(area_of_circle(5))
 
 # *
 # **
@@ -69,3 +69,25 @@ def inverted_pyramid(n):
 
     return result.rstrip()
 # print(inverted_pyramid(5))
+
+# ----------------------------------------------------------------
+# print(area_of_circle(5))
+# print()
+
+# print(hollow_right_triangle(3))
+# print()
+
+# print(hollow_right_triangle(4))
+# print()
+
+# print(hollow_right_triangle(5))
+# print()
+
+# print(inverted_pyramid(3))
+# print()
+
+# print(inverted_pyramid(4))
+# print()
+
+# print(inverted_pyramid(5))
+# print()
