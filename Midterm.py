@@ -18,7 +18,6 @@ def hollow_right_triangle(n):
     
     if n < 4:
         result += "The triangle height should be at least 4."
-
     else:
         for i in range(n - 1):
             for j in range(1):
@@ -50,7 +49,6 @@ def inverted_pyramid(n):
 
     if n < 3:
         result += "The pyramid height should be at least 3."
-
     else:
         for i in range(n):
             for j in range(i):
